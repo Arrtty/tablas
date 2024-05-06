@@ -8,7 +8,10 @@ public class Tables implements ITable{
 
     @Override
     public void showMenu() {
-        
+        System.out.println("Ingrese una opción");
+        System.out.println("1.- Mostrar una tabla");
+        System.out.println("2.- Mostrar tablas del 2 al 5");
+        System.out.println("3.- Salir");
     }
 
     @Override
