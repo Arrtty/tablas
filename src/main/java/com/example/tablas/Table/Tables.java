@@ -1,5 +1,7 @@
 package com.example.tablas.Table;
 
+import java.util.Scanner;
+
 import com.example.tablas.TableInterface.ITable;
 
 public class Tables implements ITable{
@@ -16,6 +18,46 @@ public class Tables implements ITable{
 
     @Override
     public void readOption() {
+        Scanner sc = new Scanner(System.in);
+        int op;
+        boolean i = false;
+        do{
+            try {
+                op = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("Ingrese solo numeros");
+                continue;
+            }
+        switch (op) {
+            case 1:
+                System.out.println("Ingrese el numero de la tabla que quiere ver");
+                int num = sc.nextInt();
+                table(num);
+                i = true;
+                break;
+            case 2:
+                System.out.println("2:");
+                table(2);
+                System.out.println();
+                System.out.println("3");
+                table(3);
+                System.out.println();
+                System.out.println("4");
+                table(4);
+                System.out.println();
+                System.out.println("5");
+                table(5);
+                i = true;
+                break;
+            case 3:
+                System.out.println("Adios!");
+                System.exit(0);
+        
+            default:
+            System.out.println("Ingrese una opción válida");
+                break;
+        }
+        }while(i!=true);
         
     
     }
