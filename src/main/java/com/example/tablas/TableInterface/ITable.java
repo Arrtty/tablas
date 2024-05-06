@@ -5,5 +5,5 @@ public interface ITable {
 
     void readOption();
 
-    void table();
+    void table(int num);
 }

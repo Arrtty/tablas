@@ -21,7 +21,10 @@ public class Tables implements ITable{
     }
 
     @Override
-    public void table() {
+    public void table(int num) {
+        for(int i = 1; i <= 10; i++){
+            System.out.println(num + " x " + i + " = " + num*i);
+        }
         
     }
     
